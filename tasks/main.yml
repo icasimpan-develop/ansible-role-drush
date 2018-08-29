@@ -7,6 +7,6 @@
 
 - name: "Symlink drush from {{ drush_src_loc }}."
   file:
-    src: "{{ drush_src_loc }}"
+    src: "{{ drush_src_loc }}/drush"
     dest: /usr/local/bin/drush
     state: link
