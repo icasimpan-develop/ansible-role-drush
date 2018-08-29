@@ -1,0 +1,12 @@
+---
+- name: "Get drush from official git repo."
+  git:
+    repo: "{{ drush_gitrepo }}"
+    dest: "{{ drush_src_loc }}"
+    version: "{{ drush_ver }}"
+
+- name: "Symlink drush from {{ drush_src_loc }}."
+  file:
+    src: "{{ drush_src_loc }}"
+    dest: /usr/local/bin/drush
+    state: link

@@ -1,0 +1,4 @@
+---
+drush_gitrepo: "https://github.com/drush-ops/drush.git"
+drush_ver: 8.1.17
+drush_src_loc: "/usr/local/src/drush"
